@@ -291,6 +291,7 @@ function theEliminator(contestants, loser){
     for (let i = 0; i < contestants.length; i++){
         if (contestants[i] === loser){
             contestants.splice(i,1)
+            i--
         }
     }
     return contestants
